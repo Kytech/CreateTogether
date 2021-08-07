@@ -1,6 +1,34 @@
 # Create Together
 
-This is the official repository and issue-tracker for the modpack Create Together, for Minecraft 1.16.5
+This is a fork of the official repository for the modpack Create Together, for Minecraft 1.16.5. This fork contains a handful of tweaks to the Create Together modpack, mostly to suit the preferences of myself and a few others who use this modpack on a personal server.
+
+This fork mainly exists to tweak configurations of existing config files/mod configs. Adding additional mods and configs are not handled with in this repository since it is intended to stay close to upstream, housing changes that may later need to be merged in.
+
+## Using This Fork
+
+Use of this repository is generally unchanged from the upstream. If you wish to use this to directly set up an instance, follow the directions in the rest of this README. For those on the personal server, you will generally not be setting up the modpack instance directly from this fork.
+
+## Contributing/Tweaking this Pack
+
+Before making any contributions (including pulling the latest from upstream), be sure to run the `configureUpstream.sh` script from the root of this repository. (for Windows, run the script with git bash.) This only needs to be done once every time the repository is cloned.
+
+This repository is intended to stay relatively close to upstream. Contributions are typically only accepted from those who use this modpack on the personal server mentioned earlier. Any changes that add mods or additional config files will not be accepted as these are maintained in a separate repository.
+
+Since most changes that will end up in this repository are config file edits, if you already have verified which config changes you want to make, you may edit the files directly from this repository without going through the hassle of setting it up as an instance in your launcher.
+
+### Pulling in latest changes from upstream
+
+After having executed the above-mentioned `configureUpstream.sh` script, run the following commands:
+
+```
+git checkout master
+git remote update upstream
+git merge upstream/master
+```
+
+After all merge conflicts have been resolved (if any), push the results back to `origin`.
+
+## Documentation from Upstream:
 
 ### Table of Contents
 
