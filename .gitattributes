@@ -1,0 +1,2 @@
+# Always pull down with lf to keep line endings consistent
+* text=auto eol=lf
