@@ -18,6 +18,8 @@ Since most changes that will end up in this repository are config file edits, if
 
 ### Pulling in latest changes from upstream
 
+Pulling in the latest changes from upstream should generally be done in the command line so as to avoid line ending normalization issues. This fork has a `.gitattributes` file setup and the upstream setup script to keep the repository normalized. Normalization inconsistencies may throw off some tools I use with this pack and the upstream seems to be primarily maintained on Windows, which has led to the occasional hiccup when I run any of those tools in Linux due to line ending normalization.
+
 After having executed the above-mentioned `configureUpstream.sh` script, run the following commands:
 
 ```
